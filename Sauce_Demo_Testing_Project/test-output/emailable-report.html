@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">SauceDemo Login Suite</th></tr>
+<tr><td><a href="#t0">Login Tests</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">46,329</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SauceDemo Login Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">tests.ProblemUserBugTests</td><td><a href="#m0">TC017_removeProductFromCartFails</a></td><td rowspan="1">1763813240492</td><td rowspan="1">2350</td></tr><tr class="failedeven"><td><a href="#m1">TC018_productDetailsIncorrect</a></td><td rowspan="1">1763813248450</td><td rowspan="1">812</td></tr><tr class="failedeven"><td><a href="#m2">TC019_allProductsSameImage</a></td><td rowspan="1">1763813254129</td><td rowspan="1">1060</td></tr><tr class="failedeven"><td><a href="#m3">TC020_productSortingFails</a></td><td rowspan="1">1763813260697</td><td rowspan="1">780</td></tr><tr><th colspan="4">Login Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">tests.LoginTest</td><td><a href="#m4">invalidLogin_wrongPassword</a></td><td rowspan="1">1763813223083</td><td rowspan="1">550</td></tr><tr class="passedeven"><td><a href="#m5">validLogin_problemUser</a></td><td rowspan="1">1763813229866</td><td rowspan="1">499</td></tr><tr class="passedeven"><td><a href="#m6">validLogin_standardUser</a></td><td rowspan="1">1763813235452</td><td rowspan="1">459</td></tr></tbody>
+</table>
+<h2>Login Tests</h2><h3 id="m0">tests.ProblemUserBugTests#TC017_removeProductFromCartFails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Bug observed: Product was not removed from cart (problem_user). expected [true] but found [false]
+	at tests.ProblemUserBugTests.TC017_removeProductFromCartFails(ProblemUserBugTests.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.ProblemUserBugTests#TC018_productDetailsIncorrect</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Bug: Product details do not match the product clicked (problem_user). expected [Sauce Labs Backpack] but found [Sauce Labs Fleece Jacket]
+	at tests.ProblemUserBugTests.TC018_productDetailsIncorrect(ProblemUserBugTests.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.ProblemUserBugTests#TC019_allProductsSameImage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: UI Bug: All products displayed with the same image (problem_user).
+	at tests.ProblemUserBugTests.TC019_allProductsSameImage(ProblemUserBugTests.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.ProblemUserBugTests#TC020_productSortingFails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Bug: Products not sorted correctly (problem_user). expected [true] but found [false]
+	at tests.ProblemUserBugTests.TC020_productSortingFails(ProblemUserBugTests.java:117)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.LoginTest#invalidLogin_wrongPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.LoginTest#validLogin_problemUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.LoginTest#validLogin_standardUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
